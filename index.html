@@ -3,223 +3,146 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Serviços de Impressão</title>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="Logo.png" type="image/x-icon" />
     <script src="Java.js"></script>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-
-      .text-center {
-        text-align: center;
-      }
-
-      .mx-auto {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .my-5 {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-      }
-
-      .py-5 {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-      }
-
-      .btn {
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        font-weight: 400;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        user-select: none;
-        border: 1px solid transparent;
-        border-radius: 0.25rem;
-        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        cursor: pointer;
-        color: #fff;
-        background-color: #007bff;
-        border-color: #007bff;
-      }
-
-      .btn:hover {
-        background-color: #0056b3;
-        border-color: #0056b3;
-      }
-
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
-      }
-
-      .col-sm-6 {
-        position: relative;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-
-      .card {
-        border: 1px solid #ddd;
-        border-radius: 0.25rem;
-        padding: 1rem;
-        margin: 1rem;
-        height: 100%;
-        box-sizing: border-box;
-      }
-
-      .card-title {
-        font-size: 1.5rem;
-        margin-bottom: 0.75rem;
-      }
-
-      .container {
-        padding: 1rem;
-      }
-
-      .container2 {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .card-text {
-        margin-bottom: 1rem;
-      }
-
-      .textoFooter {
-        padding: 1rem;
-        background-color: #f8f9fa;
-        border-top: 1px solid #e9ecef;
-      }
-
-      .corSecudaria {
-        color: #6c757d;
-      }
-
-      .textoBlack {
-        color: #000;
-        text-decoration: none;
-      }
-
-      .textoBlack:hover {
-        color: #0056b3;
-      }
-
-      /* Full height for columns */
-      html, body {
-        height: 100%;
-      }
-
-      .full-height {
-        height: 100%;
-      }
-    </style>
   </head>
   <body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <div class="px-4 py-5 my-5 text-center">
-      <img class="d-block mx-auto" src="Logo.png" alt="" width="100" height="100">
-      <h1 class="display-5 fw-bold">Serviços de impressão</h1>
+      <img class="d-block mx-auto " src="Logo.png" alt="" width="100" height="100">
+      <h1 class="display-5 fw-bold">Serviços de impresão</h1>
       <h2 class="display-5 fw-bold" id="R$">R$</h2>
-      <p class="lead mb-4"></p>
-      <a class="btn" onclick="whatsapp()">Fazer seu Pedido</a>
+        <p class="lead mb-4"></p>
+        <a class="btn btn-primary" onclick="whatsapp()">Fazer seu Pedido</a>
     </div>
     <div class="row">
-      <div class="col-sm-6 full-height">
-        <div class="card full-height">
+      <div class="col-sm-6">
+        <div class="card">
           <div class="card-body">
             <div class="container">
-              <h4 class="card-title">Impressão em P&B</h4>
+              <h4 class="card-title">Impresão em P&B</h4>
+
               <h2 id="R$Pretobranco">R$0</h2>
               <h2 id="QuatidadeP">0</h2>
+
             </div>
+
             <div class="row">
-              <div class="column">
+              <div class="column" >
+
                 <p class="card-text">Impressão em cor de alta qualidade para documentos, fotos e muito mais! Com nossa impressão em cor.</p>
                 <div class="container2">
-                  <button type="submit" onclick="PEBMais()" class="btn">+</button>
-                  <button type="submit" onclick="PEBMenos()" class="btn">-</button>
+                  <button type="submit" onclick="PEBMais()" class="btn btn-primary">+</button>
+                  <button type="submit" onclick="PEBMenos()" class="btn btn-primary">-</button>
+
+
                 </div>
+              
+
               </div>
             </div>
+           
+
           </div>
         </div>
       </div>
-      <div class="col-sm-6 full-height">
-        <div class="card full-height">
+      
+      <div class="col-sm-6">
+        <div class="card">
           <div class="card-body">
             <div class="container">
-              <h4 class="card-title">Impressão em colorido</h4>
+              <h4 class="card-title">Impresão em colorido</h4>
+
               <h2 id="R$Colorido">R$0</h2>
               <h2 id="QuatidadeC">0</h2>
+
             </div>
+
             <div class="row">
-              <div class="column">
+              <div class="column" >
+
                 <p class="card-text">Impressão em cor de alta qualidade para documentos, fotos e muito mais! Com nossa impressão em cor.</p>
                 <div class="container2">
-                  <button type="submit" onclick="ColoridoMais()" class="btn">+</button>
-                  <button type="submit" onclick="ColoridoMenos()" class="btn">-</button>
+                  <button type="submit" onclick="ColoridoMais()" class="btn btn-primary">+</button>
+                  <button type="submit" onclick="ColoridoMenos()" class="btn btn-primary">-</button>
+
+
                 </div>
+              
+
               </div>
             </div>
+           
+
           </div>
         </div>
       </div>
-      <div class="col-sm-6 full-height">
-        <div class="card full-height">
+      <div class="col-sm-6">
+        <div class="card">
           <div class="card-body">
             <div class="container">
               <h4 class="card-title">Scan de documentos</h4>
+
               <h2 id="R$Scan">R$0</h2>
               <h2 id="QuatidadeS">0</h2>
+
             </div>
+
             <div class="row">
-              <div class="column">
-                <p class="card-text">Com o nosso serviço de digitalização de documentos, você pode ter acesso a uma cópia digital de alta qualidade de seus documentos em papel! Nossos scanners de última geração produzem imagens de alta resolução, garantindo que todos os detalhes do seu documento sejam capturados com precisão.</p>
+              <div class="column" >
+
+                <p class="card-text">"Com o nosso serviço de digitalização de documentos, você pode ter acesso a uma cópia digital de alta qualidade de seus documentos em papel! Nossos scanners de última geração produzem imagens de alta resolução, garantindo que todos os detalhes do seu documento sejam capturados com precisão</p>
                 <div class="container2">
-                  <button type="submit" onclick="SMais()" class="btn">+</button>
-                  <button type="submit" onclick="SMenos()" class="btn">-</button>
+                  <button type="submit" onclick="SMais()" class="btn btn-primary">+</button>
+                  <button type="submit" onclick="SMenos()" class="btn btn-primary">-</button>
+
+
                 </div>
+              
+
               </div>
             </div>
+           
+
           </div>
         </div>
       </div>
-      <div class="col-sm-6 full-height">
-        <div class="card full-height">
+      <div class="col-sm-6">
+        <div class="card">
           <div class="card-body">
             <div class="container">
-              <h4 class="card-title">Impressão fotográfica</h2>
+              <h4 class="card-title">Impresão fotografica</h4>
+
               <h2 id="R$Foto">R$0</h2>
               <h2 id="QuatidadeF">0</h2>
+
             </div>
+
             <div class="row">
-              <div class="column">
-                <p class="card-text">Obtenha impressões fotográficas de alta qualidade com o nosso papel fotográfico! Com o nosso papel, você pode ter certeza de que suas fotos serão impressas com cores vivas e detalhes precisos.</p>
+              <div class="column" >
+
+                <p class="card-text">Obtenha impressões fotográficas de alta qualidade com o nosso papel fotográfico! Com o nosso papel, você pode ter certeza de que suas fotos serão impressas com cores vivas e detalhes precisos</p>
                 <div class="container2">
-                  <button type="submit" onclick="FMais()" class="btn">+</button>
-                  <button type="submit" onclick="FMenos()" class="btn">-</button>
+                  <button type="submit" onclick="FMais()" class="btn btn-primary">+</button>
+                  <button type="submit" onclick="FMenos()" class="btn btn-primary">-</button>
+
+
                 </div>
+              
+
               </div>
             </div>
+           
+
           </div>
         </div>
       </div>
     </div>
     <footer class="textoFooter text-center corSecudaria">
-      <a href="https://renancarvalho.netlify.app/" class="textoBlack">&copy; 2023 Renan Carvalho</a>
+      <a href="https://renancarvalho.netlify.app/ " class="textoBlack">@Copyright 2023 Renan Carvalho</a>
     </footer>
-  </body>
 </html>
